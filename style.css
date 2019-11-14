@@ -45,4 +45,22 @@
   background-color: #f08a4b;
   grid-area: footer;
 }
+@media (max-width: 450px) {
+  #app {
+    height: 100vh;
+    text-align: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas:  "header"
+                          "nav"
+                          "article-1"
+                          "ad-area"
+                          "article-2"
+                          "footer";
+
+  }
+
+
+}
+
 @media

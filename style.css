@@ -63,4 +63,46 @@
 
 }
 
-@media
+@media (max-width: 801px) && (min-width: 451px) {
+  #app {
+    display: grid;
+    text-align: center;
+    width: 100vw;
+    grid-template-rows: 1fr 1fr 2fr 2fr 1fr;
+    grid-template-columns: 5fr 4fr;
+    grid-template-areas:  "header     header" 
+                          "nav        nav"
+                          "article-1  ad-area"
+                          "article-2  ad-area"
+                          "footer     footer";
+  }
+
+  #header {
+    background-color: #f3ca40;
+    grid-area: header;
+  }
+  #nav {
+    background-color: #4b4e6d;
+    grid-area: nav;
+  }
+  #article-1 {
+    background-color: #6a8d92;
+    grid-area: article-1;
+  }
+  
+  #article-2 {
+    background-color: yellow;
+    grid-area: article-2;
+  }
+  
+  #ads {
+    background-color: #f2a541;
+    grid-area: ad-area;
+  }
+  
+  #footer {
+    background-color: #f08a4b;
+    grid-area: footer;
+  }
+
+}

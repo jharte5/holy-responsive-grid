@@ -50,6 +50,7 @@
     height: 100vh;
     text-align: center;
     display: grid;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas:  "header"
                           "nav"
@@ -63,7 +64,7 @@
 
 }
 
-@media (max-width: 801px) && (min-width: 451px) {
+@media (max-width: 801px) and (min-width: 451px) {
   #app {
     display: grid;
     text-align: center;

@@ -6,7 +6,10 @@
   font-size: 5em;
   text-align: center;
   height: 100vh;
-  grid-template-rows: repeat(3, 1fr);
+  /* width: 200vw; */
+  display: grid;
+  grid-template-rows: 1fr 3fr 3fr 1fr;
+  grid-template-columns: 3fr 4fr 3fr;
   grid-template-areas:  "header header header"
                         "nav article-1 ad-area"
                         "nav article-2 ad-area"
@@ -15,24 +18,31 @@
 
 #header {
   background-color: #f3ca40;
+  grid-area: header;
 }
 
 #nav {
   background-color: #4b4e6d;
+  grid-area: nav;
 }
 
 #article-1 {
   background-color: #6a8d92;
+  grid-area: article-1;
 }
 
 #article-2 {
   background-color: yellow;
+  grid-area: article-2;
 }
 
 #ads {
   background-color: #f2a541;
+  grid-area: ad-area;
 }
 
 #footer {
   background-color: #f08a4b;
+  grid-area: footer;
 }
+@media

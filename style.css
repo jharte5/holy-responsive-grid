@@ -6,6 +6,11 @@
   font-size: 5em;
   text-align: center;
   height: 100vh;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:  "header header header"
+                        "nav article-1 ad-area"
+                        "nav article-2 ad-area"
+                        "footer footer footer";
 }
 
 #header {
